@@ -1,0 +1,44 @@
+/* src/components/PostList/PostList.css */
+.container {
+    background: url('../Assets/background.jpg') no-repeat;
+    padding: 20px;
+}
+
+.heading {
+    color: rgb(235, 240, 246);
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 30px;
+}
+
+.post-card {
+    background: rgba(228, 234, 239, 0.656);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.post-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+
+.postbody {
+    font-size: 16px;
+    padding-left: 25px;
+}
